@@ -27,7 +27,18 @@ const ShowUserReservation = () => {
     return (
       <div className='p-4'>
         <BackButton />
-        <h1 className='text-3xl my-4'>Show User Reservation</h1>
+        <h1
+  className='text-3xl my-4'
+  style={{
+    color: 'red',
+    fontWeight: 'bold',
+    fontStyle: 'italic',
+    fontSize: '32px',
+    textAlign: 'center',
+  }}
+>
+  Check Your Reservation
+</h1>
         {loading ? (
           <Spinner />
         ) : (
