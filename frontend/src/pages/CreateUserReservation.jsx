@@ -3,7 +3,7 @@ import BackButton from '../components/BackButton';
 import Spinner from '../components/Spinner';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-//import { useSnackbar } from 'notistack';
+import { useSnackbar } from 'notistack';
 
 const CreateUserReservation = () => {
   const [VehicleType, setVehicleType] = useState('');
@@ -12,10 +12,10 @@ const CreateUserReservation = () => {
   const [ServiceStation, setServiceStation] = useState('');
   const [Date, setDate] = useState('');
   const [Time, setTime] = useState('');
-  const [Commnents, setCommnents] = useState('');
+  const [Comments, setComments] = useState('');
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
-  //const { enqueueSnackbar } = useSnackbar();
+  const { enqueueSnackbar } = useSnackbar();
 
   const handleSaveUserReservation = () => {
     const data = {
@@ -25,7 +25,7 @@ const CreateUserReservation = () => {
       ServiceStation,
       Date,
       Time,
-      Commnents
+      Comments
     };
     setLoading(true);
     axios
@@ -107,8 +107,8 @@ const CreateUserReservation = () => {
           <label className='text-xl mr-4 text-gray-500'>Commnents</label>
           <input
             type='text'
-            value={Commnents}
-            onChange={(e) => setCommnents(e.target.value)}
+            value={Comments}
+            onChange={(e) => setComments(e.target.value)}
             className='border-2 border-gray-500 px-4 py-2  w-full '
           />
         </div>

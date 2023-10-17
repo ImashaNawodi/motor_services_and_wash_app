@@ -3,7 +3,7 @@ import BackButton from '../components/BackButton';
 import Spinner from '../components/Spinner';
 import axios from 'axios';
 import { useNavigate ,useParams} from 'react-router-dom';
-//import { useSnackbar } from 'notistack';
+import { enqueueSnackbar, useSnackbar } from 'notistack';
 
 const UpdateUserReservation = () => {
   const [VehicleType, setVehicleType] = useState('');
@@ -12,11 +12,11 @@ const UpdateUserReservation = () => {
   const [ServiceStation, setServiceStation] = useState('');
   const [Date, setDate] = useState('');
   const [Time, setTime] = useState('');
-  const [Commnents, setCommnents] = useState('');
+  const [Comments, setComments] = useState('');
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
   const{id}=useParams();
-  
+  const{enqueueSnackbar} =useSnackbar();
   useEffect(() => {
     setLoading(true);
     axios.get(`http://localhost:5555/users/${id}`)
@@ -27,7 +27,7 @@ const UpdateUserReservation = () => {
         setServiceStation(response.data.ServiceStation)
         setDate(response.data.Date)
         setTime(response.data.Time)
-        setCommnents(response.data.Commnents)
+        setComments(response.data.Comments)
         setLoading(false);
       }).catch((error) => {
         setLoading(false);
@@ -44,24 +44,23 @@ const UpdateUserReservation = () => {
       ServiceStation,
       Date,
       Time,
-      Commnents
+      Comments
     };
     setLoading(true);
     axios
-      .put('http://localhost:5555/users/${id}', data)
+      .put(`http://localhost:5555/users/${id}`, data)
       .then(() => {
         setLoading(false);
-        enqueueSnackbar('Reservation is Created successfully', { variant: 'success' });
+        enqueueSnackbar('Reservation is updated successfully', { variant: 'success' });
         navigate('/');
       })
       .catch((error) => {
         setLoading(false);
-        // alert('An error happened. Please Chack console');
-        enqueueSnackbar('Error', { variant: 'error' });
+        enqueueSnackbar('Error updating reservation', { variant: 'error' });
         console.log(error);
       });
   };
-
+  
   return (
     <div className='p-4'>
       <BackButton />
@@ -123,11 +122,11 @@ const UpdateUserReservation = () => {
           />
         </div>
         <div className='my-4'>
-          <label className='text-xl mr-4 text-gray-500'>Commnents</label>
+          <label className='text-xl mr-4 text-gray-500'>Comments</label>
           <input
             type='text'
-            value={Commnents}
-            onChange={(e) => setCommnents(e.target.value)}
+            value={Comments}
+            onChange={(e) => setComments(e.target.value)}
             className='border-2 border-gray-500 px-4 py-2  w-full '
           />
         </div>
