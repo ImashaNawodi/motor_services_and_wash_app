@@ -1,0 +1,62 @@
+/* OperatingHours.css */
+
+/* Style the container */
+.operating-hours-container {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Style the title */
+  .operating-hours-title {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  /* Style the table */
+  .operating-hours-table {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff; /* Background color for the table */
+  }
+  
+  .operating-hours-table th {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    color: #444;
+  }
+  
+  .operating-hours-table th:nth-child(odd) {
+    background-color: #FF20B2AA; /* Background color for odd columns */
+    color: #333;
+  }
+
+  .operating-hours-table th:nth-child(even) {
+    background-color: #FF20B2AA;/* Background color for even columns */
+    color: #222;
+  }
+  
+  .operating-hours-table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    color: #444;
+    background-color: #FFD3D3D3; /* Background color for table cells */
+  }
+  
+  /* Style the message */
+  .operating-hours-message {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #555;
+  }
