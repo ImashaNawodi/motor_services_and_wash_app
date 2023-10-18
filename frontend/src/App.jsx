@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route} from 'react-router-dom';
 import Home from './pages/Home';
 import CreateUserReservation from './pages/CreateUserReservation';
 import DeleteUserReservation from './pages/DeleteUserReservation';
@@ -11,7 +11,8 @@ import HomePage from './pages/HomePage';
 import Contacts from './pages/Contacts';
 import OperatingHours from './pages/OperatingHours';
 import Locations from './pages/Locations';
- 
+import Services from './pages/Services';
+
 
 const App = () => {
   return (
@@ -20,11 +21,13 @@ const App = () => {
       <TopBar/>
       <NavBar/>
     <Routes>
+      
       <Route path="/" element={<HomePage />} />
-      <Route Path='/' element={<Home/>}/>
+      <Route Path='/pages/Home' element={<Home/>}/>
       <Route path="/contacts" element={<Contacts />} />
       <Route path="/operatinghours" element={<OperatingHours />} />
       <Route path="/locations" element={<Locations />} />
+      <Route path="/services" element={<Services />} />
       <Route path="/users/create" element={<CreateUserReservation />} />
       <Route path="/users/edit/:id" element={<UpdateUserReservation />} />
       <Route path="/users/delete/:id" element={<DeleteUserReservation />} />

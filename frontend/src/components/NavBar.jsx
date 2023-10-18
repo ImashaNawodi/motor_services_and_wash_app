@@ -17,6 +17,7 @@ export default function NavBar() {
                 <a href ='/contacts'>Contacts</a>
                 <a href="/operatinghours">Operating Hours</a>
                 <a href="/locations">Locations</a>
+                <a href='/services'> Services</a>
                 
 
                 <button className='nav-btn nav-close-btn' onClick={showNavBar}>
