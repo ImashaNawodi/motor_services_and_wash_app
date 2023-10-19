@@ -12,9 +12,10 @@ import Contacts from './pages/Contacts';
 import OperatingHours from './pages/OperatingHours';
 import Locations from './pages/Locations';
 import Services from './pages/Services';
-import SignIn from './components/SignIn';
-import SignUp from './components/SignUp';
-import Offers from './components/Offers';
+import SignIn from './pages/SignIn';
+import SignUp from './pages/SignUp';
+import Offers from './pages/Offers';
+import Profile from './pages/Profile';
 
 
 const App = () => {
@@ -34,6 +35,7 @@ const App = () => {
       <Route path="/offers" element={<Offers />} />
       <Route path="/signin" element={<SignIn/>} />
       <Route path="/signup" element={<SignUp/>} />
+      <Route path="/profile" element={<Profile/>} />
       <Route path="/users/create" element={<CreateUserReservation />} />
       <Route path="/users/edit/:id" element={<UpdateUserReservation />} />
       <Route path="/users/delete/:id" element={<DeleteUserReservation />} />

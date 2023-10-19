@@ -11,7 +11,7 @@ export default function NavBar() {
 
     return (
         <header>
-            <h1>Logo</h1>
+            <h1>MotoCare Group of Company</h1>
             <nav ref={navRef}>
                 <a href='/'>HomePage</a>
                 <a href ='/contacts'>Contacts</a>
@@ -21,7 +21,7 @@ export default function NavBar() {
                 <a href='/offers'> Offers</a>
                 <a href='/signin'>Sign In</a>
                 <a href='/signup'>Sign Up</a>
-                <a href='/home'>Home</a>
+                <a href='/profile'>Profile</a>
 
                 <button className='nav-btn nav-close-btn' onClick={showNavBar}>
                       <FaTimes />
