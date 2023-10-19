@@ -12,6 +12,9 @@ import Contacts from './pages/Contacts';
 import OperatingHours from './pages/OperatingHours';
 import Locations from './pages/Locations';
 import Services from './pages/Services';
+import SignIn from './components/SignIn';
+import SignUp from './components/SignUp';
+import Offers from './components/Offers';
 
 
 const App = () => {
@@ -23,11 +26,14 @@ const App = () => {
     <Routes>
       
       <Route path="/" element={<HomePage />} />
-      <Route Path='/pages/Home' element={<Home/>}/>
+      <Route Path="/home" element={<Home/>}/>
       <Route path="/contacts" element={<Contacts />} />
       <Route path="/operatinghours" element={<OperatingHours />} />
       <Route path="/locations" element={<Locations />} />
       <Route path="/services" element={<Services />} />
+      <Route path="/offers" element={<Offers />} />
+      <Route path="/signin" element={<SignIn/>} />
+      <Route path="/signup" element={<SignUp/>} />
       <Route path="/users/create" element={<CreateUserReservation />} />
       <Route path="/users/edit/:id" element={<UpdateUserReservation />} />
       <Route path="/users/delete/:id" element={<DeleteUserReservation />} />

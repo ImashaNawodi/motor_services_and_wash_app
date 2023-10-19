@@ -18,7 +18,10 @@ export default function NavBar() {
                 <a href="/operatinghours">Operating Hours</a>
                 <a href="/locations">Locations</a>
                 <a href='/services'> Services</a>
-                
+                <a href='/offers'> Offers</a>
+                <a href='/signin'>Sign In</a>
+                <a href='/signup'>Sign Up</a>
+                <a href='/home'>Home</a>
 
                 <button className='nav-btn nav-close-btn' onClick={showNavBar}>
                       <FaTimes />

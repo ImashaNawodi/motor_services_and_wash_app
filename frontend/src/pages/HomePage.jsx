@@ -1,6 +1,7 @@
 import React from "react";
 
 
+
 function HomePage() {
   const containerStyle = {
     display: "flex",
@@ -44,6 +45,8 @@ function HomePage() {
     cursor: "pointer",
     marginRight: "20px",
   };
+ 
+  
 
   return (
     <div style={containerStyle}>

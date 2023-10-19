@@ -1,0 +1,97 @@
+.login {
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+      ),
+      url("/Image/mainimage.png");
+    background-size: cover;
+  }
+  
+  .loginTitle {
+    font-size: 50px;
+  }
+  
+  .loginForm {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .loginForm > label {
+    margin: 10px 0;
+    font-weight: bold; /* Make the labels bold */
+    font-size: 18px; /* Increase the font size to 18px or your desired size */
+}
+
+  
+.loginInput {
+    padding: 10px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    width: 250px; /* Increase the width to adjust the input field length */
+}
+
+.loginInput:focus {
+    outline: none;
+}
+
+  
+  .loginButton {
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: lightcoral;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .loginRegisterButton {
+    margin-top: 20px; /* Add space below the "Welcome Box" */
+    background-color: teal;
+    color: white;
+    padding: 10px 20px; /* Increase padding for width */
+    border: none;
+    border-radius: 10px;
+    display: block; /* Display as a block element to move it below */
+    text-align: center; /* Center the text */
+    cursor: pointer;
+  }
+  
+  .remember-me {
+    display: flex;
+    align-items: center; /* Vertically center the checkbox and text */
+    margin-top: 10px; /* Add space between the previous input and this section */
+  }
+  
+  .remember-me input {
+    margin-right: 5px; /* Add space between the checkbox and text */
+  }
+  
+  .agree-continue {
+    display: flex;
+    align-items: center; /* Vertically center the checkbox and text */
+    margin-top: 10px; /* Add space between the previous button and this section */
+  }
+  
+  .agree-continue input {
+    margin-right: 5px; /* Add space between the checkbox and text */
+  }
+  .welcome-box {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #00FA9A; /* Change this color to your desired color */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: right;
+  }
+  
+  
+  
