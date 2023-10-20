@@ -13,21 +13,22 @@ export default function SignUp() {
     e.preventDefault();
     setError(false);
     try {
-      const res = await axios.post("/auth/register", {
+      const res = await axios.post("/logins/signup", {
         fullname,
         email,
         password,
       });
-      res.data && window.location.replace("/login");
-    } catch (err) {
+      res.data && window.location.replace("/signin");
+    } catch (error) {
       setError(true);
     }
-  };
+  }
+
   return (
     <div className="register">
       <span className="registerTitle">Sign Up</span>
       <form className="registerForm" onSubmit={handleSubmit}>
-        <label>Fullname</label>
+        <label>Full Name</label>
         <input
           type="text"
           className="registerInput"
@@ -48,17 +49,17 @@ export default function SignUp() {
           placeholder="Enter your password..."
           onChange={(e) => setPassword(e.target.value)}
         />
-        
+        <div className="agree-continue">
+          <input type="checkbox" id="agreeAndContinue" />
+          <label htmlFor="agreeAndContinue">Agree and Continue</label>
+        </div>
         <button className="registerButton" type="submit">
+        <Link className="link" to="/signin">
           Sign Up
+        </Link>
         </button>
       </form>
-      <button className="registerLoginButton">
-        <Link className="link" to="/signin">
-          Sign In
-        </Link>
-      </button>
-      {error && <span style={{color:"red", marginTop:"10px"}}>Something went wrong!</span>}
+      {error && <span style={{ color: "red", marginTop: "10px" }}>Something went wrong!</span>}
     </div>
   );
 }

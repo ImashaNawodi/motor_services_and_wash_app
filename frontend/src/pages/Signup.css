@@ -1,86 +1,74 @@
 .register {
-    height: calc(100vh - 50px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(
-        rgba(255, 255, 255, 0.5),
-        rgba(255, 255, 255, 0.5)
-      ),
-      url("/Image/content-image-2.png")  ;
-        background-size: cover;
-  }
-  
-  .registerTitle {
-    font-size: 50px;
-  }
-  
-  .registerForm {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-  }
-  .registerForm > label {
-    margin: 10px 0;
-    font-weight: bold; /* Make the text bold */
-    font-size: 18px; /* Increase font size */
-  }
-  
-  
-  .registerInput {
-    padding: 10px;
-    background-color: #708090; /* Set the background color to #708090 */
-    border: none;
-    border-radius: 10px;
-    width: 250px;
-  }
-  
+  height: calc(100vh - 50px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("/Image/content-image-2.png");
+    background-size: cover;
+}
 
-  
-  
-  .registerInput {
-    padding: 10px;
-    background-color: white;
-    border: none;
-    border-radius: 10px;
-  }
-  .agree-continue input {
-    margin-right: 5px; /* Add space between the checkbox and text */
-  }
-  .registerInput:focus {
-    outline: none;
-  }
-  
-  .registerLoginButton {
-    position: relative; /* Change position to relative */
-    margin-top: 20px; /* Add margin to separate from other content */
-    background-color: lightcoral;
-    cursor: pointer;
-    padding: 10px;
-    border: none;
-    color: white;
-    border-radius: 10px;
-  }
-  
-  
-  
-  .registerLoginButton {
-    margin-top: 20px; /* Add space below the "Welcome Box" */
-    background-color: teal;
-    color: white;
-    padding: 10px 20px; /* Increase padding for width */
-    border: none;
-    border-radius: 10px;
-    display: block; /* Display as a block element to move it below */
-    text-align: center; /* Center the text */
-    cursor: pointer;
-  }
-  .welcome-box {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #00FA9A; /* Change this color to your desired color */
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    text-align: right;
-  }
+.registerTitle {
+  font-size: 50px;
+}
+
+.registerForm {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.registerForm > label {
+  margin: 10px 0;
+  font-weight: bold; /* Make the text bold */
+  font-size: 18px; /* Increase font size */
+}
+
+.registerInput {
+  padding: 10px;
+  background-color: #708090; /* Set the background color to #708090 */
+  border: none;
+  border-radius: 10px;
+  width: 250px;
+}
+
+.registerInput:focus {
+  outline: none;
+}
+
+.registerLoginButton {
+  margin-top: 20px; /* Add space below the "Welcome Box" */
+  background-color: teal;
+  color: white;
+  padding: 10px 20px; /* Increase padding for width */
+  border: none;
+  border-radius: 10px;
+  display: block; /* Display as a block element to move it below */
+  text-align: center; /* Center the text */
+  cursor: pointer;
+}
+
+.registerButton {
+  position: relative; /* Change position to relative */
+  margin-top: 20px; /* Add margin to separate from other content */
+  background-color: rgb(189, 12, 12);
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  color: rgb(143, 11, 219);
+  border-radius: 10px;
+}
+
+
+.welcome-box {
+  margin-top: 410px; /* Add space between the "Sign Up" button and the welcome box */
+  padding: 10px;
+  background-color: #00FA9A; /* Change this color to your desired color */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: right;
+}

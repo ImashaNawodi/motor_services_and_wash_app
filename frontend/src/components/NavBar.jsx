@@ -9,12 +9,20 @@ export default function NavBar() {
         navRef.current.classList.toggle('responsive_nav');
     };
 
+    const headingStyle = {
+        color: 'red',
+        fontWeight: '500',
+        fontStyle: 'italic',
+        fontFamily: 'Algerian, sans-serif', // Specify 'Algebrian' as the custom font
+        fontSize: '20px',
+    };
+
     return (
         <header>
-            <h1>MotoCare Group of Company</h1>
+            <h1 style={headingStyle}>MotoCare Group of Company</h1>
             <nav ref={navRef}>
                 <a href='/'>HomePage</a>
-                <a href ='/contacts'>Contacts</a>
+                <a href='/contacts'>Contacts</a>
                 <a href="/operatinghours">Operating Hours</a>
                 <a href="/locations">Locations</a>
                 <a href='/services'> Services</a>
@@ -24,13 +32,12 @@ export default function NavBar() {
                 <a href='/profile'>Profile</a>
 
                 <button className='nav-btn nav-close-btn' onClick={showNavBar}>
-                      <FaTimes />
-              </button>
+                    <FaTimes />
+                </button>
             </nav>
             <button className='nav-btn' onClick={showNavBar}>
-              <FaBars />
-        </button>
-
+                <FaBars />
+            </button>
         </header>
     );
 }

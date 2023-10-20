@@ -17,28 +17,29 @@
     animation-name: imageAnimation;
     animation-duration: 1s;
     animation-timing-function: ease-in;
-    margin-bottom: 16px;
+    margin-top: 0px;
     z-index: 0;
   }
   
-  /* Welcome box styles */
+  
   .welcome-box {
     position: absolute;
-    top: 40%; /* Center the welcome box vertically */
-    left: 50%; /* Center the welcome box horizontally */
-    transform: translate(-50%, -50%); /* Center the welcome box */
+    transform: translate(-50%, -50%); 
     width: 400px;
-    height: 50px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #a5a6a8d5;
     z-index: 1;
+    margin-bottom: 475px;
     opacity: -1;
     animation-name: flyInAnimation;
     animation-duration: 0.01s;
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
+    
+
   }
   
   /* Welcome text styles */

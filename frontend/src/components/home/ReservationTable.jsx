@@ -1,90 +1,57 @@
+// ReservationTable.js
+
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { AiOutlineEdit } from 'react-icons/ai';
 import { BsInfoCircle } from 'react-icons/bs';
-import { MdOutlineAddBox, MdOutlineDelete } from 'react-icons/md';
+import { MdOutlineDelete } from 'react-icons/md';
+import './ReservationTable.css';
 
-const ReservationTable = ({users}) => {
+const ReservationTable = ({ users }) => {
   return (
-    <table className='w-full border-separate border-spacing-2'>
-                <thead>
-                    <tr>
-                        <th className='border border-slate-600 rounded-md'>
-                            No
-                        </th>
-                        <th className='border border-slate-600 rounded-md'>
-                            VehicleType
-                        </th>
-                        <th className='border border-slate-600 rounded-md '>
-                            VehicleNumber
-                        </th>
-                        <th className='border border-slate-600 rounded-md '>
-                            Services
-                        </th>
-                        <th className='border border-slate-600 rounded-md '>
-                            ServiceStation
-                        </th>
-                        <th className='border border-slate-600 rounded-md'>
-                            Date
-                        </th>
-                        <th className='border border-slate-600 rounded-md'>
-                            Time
-                        </th>
-                        <th className='border border-slate-600 rounded-md '>
-                            Comments
-                        </th>
-                        <th className='border border-slate-600 rounded-md'>
-                            Operations   
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {users.map((user,index) =>(
-                        <tr key ={user._id} className='h-8'>
-                            <td className='border border-slate-700 rounded-md text-center'>
-                                {index+1}
-                            </td>
-                            <td className='border border-slate-700 rounded-md text-center'>
-                                {user.VehicleType}
-                            </td>
-                            <td className='border border-slate-700 rounded-md text-center '>
-                                {user.VehicleNumber}
-                            </td>
-                            <td className='border border-slate-700 rounded-md text-center '>
-                                {user.Services}
-                            </td>
-                            <td className='border border-slate-700 rounded-md text-center'>
-                                {user.ServiceStation}
-                            </td>
-                            <td className='border border-slate-700 rounded-md text-center'>
-                                {user.Date}
-                            </td>
-                            <td className='border border-slate-700 rounded-md text-center '>
-                                {user.Time}
-                            </td>
-                            <td className='border border-slate-700 rounded-md text-center '>
-                                {user.Comments}
-                            </td>
-                            <td className='border border-slate-700 rounded-md text-center '>
-                                <div className='flex justify-center gap-x-4'>
-                                    <Link to={`/users/details/${user._id}`}>
-                                        <BsInfoCircle className='text-2xl text-green-800'/>
-                                    </Link>
-                                    <Link to={`/users/edit/${user._id}`}>
-                                        <AiOutlineEdit className='text-2xl text-yellow-800'/>
-                                    </Link>
-                                    <Link to={`/users/delete/${user._id}`}>
-                                        <MdOutlineDelete className='text-2xl text-red-800'/>
-                                    </Link>
+    <table className='reservation-table'>
+      <thead>
+        <tr>
+          <th className='reservation-header'>No</th>
+          <th className='reservation-header'>Vehicle Type</th>
+          <th className='reservation-header'>Vehicle Number</th>
+          <th className='reservation-header'>Services</th>
+          <th className='reservation-header'>Service Station</th>
+          <th className='reservation-header'>Date</th>
+          <th className='reservation-header'>Time</th>
+          <th className='reservation-header'>Comments</th>
+          <th className='reservation-header'>Operations</th>
+        </tr>
+      </thead>
+      <tbody>
+        {users.map((user, index) => (
+          <tr key={user._id} className='reservation-row'>
+            <td className='reservation-data'>{index + 1}</td>
+            <td className='reservation-data'>{user.VehicleType}</td>
+            <td className='reservation-data'>{user.VehicleNumber}</td>
+            <td className='reservation-data'>{user.Services}</td>
+            <td className='reservation-data'>{user.ServiceStation}</td>
+            <td className='reservation-data'>{user.Date}</td>
+            <td className='reservation-data'>{user.Time}</td>
+            <td className='reservation-data'>{user.Comments}</td>
+            <td className='reservation-data'>
+              <div className='icon-link'>
+                <Link to={`/users/details/${user._id}`}>
+                  <BsInfoCircle className='reservation-icon' />
+                </Link>
+                <Link to={`/users/edit/${user._id}`}>
+                  <AiOutlineEdit className='reservation-icon' />
+                </Link>
+                <Link to={`/users/delete/${user._id}`}>
+                  <MdOutlineDelete className='reservation-icon' />
+                </Link>
+              </div>
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  );
+};
 
-                                </div>
-                                
-                            </td>
-                        </tr>
-
-                    ))}
-                </tbody>
-            </table>
-  )
-}
-
-export default ReservationTable
+export default ReservationTable;

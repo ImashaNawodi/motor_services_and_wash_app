@@ -1,9 +1,14 @@
 import React from 'react';
-import './Locations.css'; // Import a CSS file for styling
+import './Locations.css';
 
 export default function Locations() {
   return (
     <div className="locations-container">
+      <p className="locations-intro">
+      These stations are the locations we have available.<br />
+        Choose the station that best fits your needs, and we'll be happy to assist you.
+      </p>
+
       <LocationCard
         name="Bellanthota"
         address="No 86, Attidiya Road, Nikape, Dehiwala"
@@ -31,8 +36,6 @@ export default function Locations() {
         phone="0332287467"
         hours="Monday - Friday: 8:00 AM to 8:00 PM, Weekends: 7:00 AM to 8:00 PM"
       />
-
-      
     </div>
   );
 }

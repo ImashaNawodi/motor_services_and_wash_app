@@ -1,7 +1,7 @@
 import React from 'react';
 
 const topBarStyle = {
-  backgroundColor: '#954535',
+  backgroundColor: '#DC143C',
   width: '100%',
   height: '75px',
   display: 'flex',

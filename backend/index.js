@@ -1,8 +1,10 @@
 import express from "express";
 import mongoose from "mongoose";
 import { User } from "./models/userModel.js";
+import { Login } from "./models/loginUserModel.js";
 import { PORT ,mongoDBURL} from "./config.js";
 import userReservationRoute from "./routes/userReservationRoute.js";
+import auth from  "./routes/auth.js";
 import cors from 'cors';
 
 
@@ -31,6 +33,7 @@ app.get('/', (request, response) => {
 });
 
 app.use('/users',userReservationRoute);
+app.use('/logins',auth);
 
 mongoose
   .connect(mongoDBURL)

@@ -52,7 +52,7 @@ const UpdateUserReservation = () => {
       .then(() => {
         setLoading(false);
         enqueueSnackbar('Reservation is updated successfully', { variant: 'success' });
-        navigate('/');
+        navigate('/profile');
       })
       .catch((error) => {
         setLoading(false);
@@ -142,9 +142,13 @@ const UpdateUserReservation = () => {
             className='border-2 border-gray-500 px-4 py-2  w-full '
           />
         </div>
-        <button className='p-2 bg-sky-300 m-8' onClick={handleUpdateUserReservation}>
-          Save
-        </button>
+        <div className='my-4 flex items-center justify-center'>
+  <button className='p-2 bg-pink-500 text-white rounded-lg hover:bg-pink-700 ' style={{ width: '100px' }} onClick={handleUpdateUserReservation}>
+    Save
+  </button>
+</div>
+
+       
       </div>
     </div>
   );

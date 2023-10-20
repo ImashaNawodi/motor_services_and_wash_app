@@ -6,7 +6,30 @@
     justify-content: center;
     align-items: center; /* Align items vertically in the center */
     height: 100vh; /* Make the container take the full height of the viewport */
+    flex-direction: column;
   }
+
+  .locations-intro {
+    text-align: center;
+    font-size: 18px;
+    margin: 20px 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:#110d0d;
+  }
+  
+  /* Style for each location card */
+  .location-card {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    background-color: rgba(240, 240, 240, 0.8);
+    text-align: center;
+    min-width: 250px;
+  }
+ 
+  
+ 
   
   .location-card {
     border: 1px solid #ccc;

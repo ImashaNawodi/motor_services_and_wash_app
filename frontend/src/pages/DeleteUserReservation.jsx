@@ -34,7 +34,7 @@ const DeleteUserReservation = () => {
           .then(() => {
             setLoading(false);
             enqueueSnackbar('Reservation deleted', { variant: 'success' });
-            navigate('/');
+            navigate('/profile');
           })
           .catch((error) => {
             setLoading(false);

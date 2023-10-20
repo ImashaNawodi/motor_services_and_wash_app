@@ -7,60 +7,62 @@ import { BsInfoCircle } from 'react-icons/bs';
 import { MdOutlineAddBox, MdOutlineDelete } from 'react-icons/md';
 import ReservationTable from '../components/home/ReservationTable';
 import ReservationCard from '../components/home/ReservationCard';
-
+import './Home.css';
 
 const Home = () => {
-    const [users, setUsers] = useState([]);
-    const [loading, setLoading] = useState(false);
-    const [showType, setShowType] = useState('table');
-  
-    useEffect(() => {
-      setLoading(true);
-      axios
-        .get('http://localhost:5555/users')
-        .then((response) => {
-          setUsers(response.data.data);
-          setLoading(false);
-        })
-        .catch((error) => {
-          console.log(error);
-          setLoading(false);
-        });
-    }, []);
-    return (
-        <div className='p-4'>
-            <div className='flex justify-center items-center gap-x-4'>
+  const [users, setUsers] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [showType, setShowType] = useState('table');
+
+  useEffect(() => {
+    setLoading(true);
+    axios
+      .get('http://localhost:5555/users')
+      .then((response) => {
+        setUsers(response.data.data);
+        setLoading(false);
+      })
+      .catch((error) => {
+        console.log(error);
+        setLoading(false);
+      });
+  }, []);
+
+  return (
+    <div className='p-4'>
+      <div className='flex justify-center items-center gap-x-4 '>
         <button
-          className='bg-sky-300 hover:bg-sky-600 px-4 py-1 rounded-lg'
+          className='button'
           onClick={() => setShowType('table')}
         >
           Table
         </button>
         <button
-          className='bg-sky-300 hover:bg-sky-600 px-4 py-1 rounded-lg'
+          className='button'
           onClick={() => setShowType('card')}
         >
           Card
         </button>
       </div>
-            <div className='flex justify-between items-center'>
-            <h1 className='text-3xl my-8'>User Reservation List</h1>
-            <Link to='/users/create'>
-              <MdOutlineAddBox className='text-sky-800 text-4xl' />
-            </Link>
-          </div>
-          {loading ? (
+      <div className='flex justify-between items-center'>
+        <h1 className='title'>User Reservation List</h1>
+        <Link to='/users/create' className='add-user-link'>
+          <MdOutlineAddBox />
+        </Link>
+      </div>
+      {loading ? (
         <Spinner />
-      ) : showType === 'table' ? (
-        <ReservationTable users={users} />
       ) : (
-        <ReservationCard users={users} />
-      )}
+        <div className="reservation-list-container">
+          {showType === 'table' ? (
+            <ReservationTable users={users} />
+          ) : (
+            <ReservationCard users={users} />
+          )}
         </div>
-      )
-    }
-    
+      )}
+    </div>
+  );
+}
 
-
-
-export default  Home;
+export default Home;
