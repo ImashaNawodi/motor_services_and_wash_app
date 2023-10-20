@@ -13,7 +13,7 @@
  
   .profile-image {
     width: 100%;
-    height: 350px;
+    height: 250px;
     animation-name: imageAnimation;
     animation-duration: 1s;
     animation-timing-function: ease-in;
@@ -32,7 +32,8 @@
     align-items: center;
     background-color: #a5a6a8d5;
     z-index: 1;
-    margin-bottom: 475px;
+    margin-bottom:575px;
+    margin: left 20px;
     opacity: -1;
     animation-name: flyInAnimation;
     animation-duration: 0.01s;

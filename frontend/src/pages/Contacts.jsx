@@ -23,12 +23,12 @@ export default function Contacts() {
         <h3>Car Care Division</h3>
         <p>
           <strong>Business Address:</strong><br />
-          LAUGFS Lubricants Ltd - Car Care division<br />
+          MotorCare Pro Ltd<br />
           6th Floor, No. 101, Maya Avenue, Colombo 06
         </p>
         <p><strong>Phone:</strong> +94 11 556 8080</p>
         <p><strong>Fax:</strong> +94 11 528 9612</p>
-        <p><strong>Email:</strong> <a href="mailto:carcare@laugfs.lk">carcare@laugfs.lk</a></p>
+        <p><strong>Email:</strong> <a href="mailto:info@laugfs.lk">carcare@laugfs.lk</a></p>
         <p><strong>Operating Hours:</strong> Monday - Friday: 9:00 AM to 5:00 PM</p>
       </div>
 
@@ -36,7 +36,7 @@ export default function Contacts() {
         <h3>Corporate Office</h3>
         <p>
           <strong>Business Address:</strong><br />
-          LAUGFS Holdings Limited<br />
+          MotorCare Pro Limited<br />
           No: 101, Maya Avenue, Colombo 06
         </p>
         <p><strong>Phone:</strong> +94 11 5 566 222</p>
