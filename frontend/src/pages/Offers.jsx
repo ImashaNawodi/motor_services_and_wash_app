@@ -1,19 +1,19 @@
 import React from 'react';
 
 const boxStyle = {
-  backgroundColor: '#F3F3F3', // Background color
-  padding: '20px',           // Padding around the box
-  border: '2px solid #333',  // Border style
-  borderRadius: '10px',      // Rounded corners
-  maxWidth: '400px',         // Set a maximum width for the box
-  margin: '30px auto',       // Adjust top margin for spacing
-  textAlign: 'center',       // Center-align text within the box
+  backgroundColor: '#F3F3F3', 
+  padding: '20px',           
+  border: '2px solid #333',  
+  borderRadius: '10px',      
+  maxWidth: '400px',         
+  margin: '30px auto',       
+  textAlign: 'center',      
 };
 
 const paragraphStyle = {
-  fontStyle: 'italic',      // Apply italic font style
-  fontWeight: 'bold',       // Apply bold font weight
-  fontSize: '18px',         // Set the font size
+  fontStyle: 'italic',      
+  fontWeight: 'bold',      
+  fontSize: '18px',        
 };
 
 export default function Offers() {

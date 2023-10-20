@@ -1,6 +1,4 @@
-/* Home.css */
 
-/* Styles for the buttons */
 .button {
     background-color: #ad1f8a;
     color: #ffffff;
@@ -9,12 +7,10 @@
     border-radius: 4px;
     cursor: pointer;
   }
-  /* Home.css or your custom CSS file */
-
-/* Style for the "Add User" link */
+ 
 .add-user-link {
-  color: #ff69b4; /* Pink color for the icon */
-  font-size: 24px; /* Adjust the font size as needed */
+  color: #ff69b4; 
+  font-size: 24px; 
 }
 
   
@@ -22,14 +18,14 @@
     background-color: #2196F3;
   }
   
-  /* Style for the main title */
+  
   .title {
     font-size: 24px;
     margin: 16px 0;
     color: red;
   }
   
-  /* Style for the "Add User" link */
+ 
   .add-user-link {
     color: #3b0606;
     font-size: 30px;
@@ -42,24 +38,22 @@
     height: 100%;
   }
   
-  /* You can define additional styles for other components as needed */
-  /* Home.css or your custom CSS file */
-
+ 
   .custom-button {
-    background-color: #ff69b4; /* Pink color */
+    background-color: #ff69b4; 
     color: #ffffff;
-    padding: 8px 4px; /* Adjust the padding for width and height */
+    padding: 8px 4px; 
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    font-size: 16px; /* Adjust the font size as needed */
-    font-weight: bold; /* Make the text bold */
+    font-size: 16px; 
+    font-weight: bold; 
     width:100px;
-    margin: 0 auto; /* Center the button horizontally */
+    margin: 0 auto; 
   display: block; 
     
   }
   .custom-button:hover {
-    background-color: #ff1493; /* Darker pink on hover */
+    background-color: #ff1493; 
   }
   

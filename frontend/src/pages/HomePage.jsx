@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 function HomePage() {
   const containerStyle = {
@@ -15,18 +15,17 @@ function HomePage() {
 
   const welcomeTextStyle = {
     fontSize: "28px",
-    color: "blue",
+    color: "red",
     marginBottom: "20px",
-    
+    fontWeight: "bold",
   };
-
- 
 
   const boxStyle = {
     backgroundColor: "rgba(255, 255, 255, 0.8)",
     padding: "20px",
     borderRadius: "10px",
     width: "900px",
+    marginTop: "20px", // Add margin-top to separate it from the navigation bar
   };
 
   const headingStyle = {
@@ -45,18 +44,20 @@ function HomePage() {
   };
 
   return (
-    <div style={containerStyle}>
+    <div>
       <p id="welcome-text" style={welcomeTextStyle}>
         Welcome to MotorCare Pro
       </p>
-      <div style={boxStyle}>
-        <h1 style={headingStyle}>A Complete Care Experience for Your Ride</h1>
-        <p style={paragraphStyle}>
-          Your go-to destination for premium vehicle care.<br />
-          We specialize in top-notch vehicle wash and motor services, ensuring your vehicle looks its best and runs smoothly.<br />
-          Explore our services and experience excellence like never before.<br />
-          Trust us to make your vehicle shine inside and out, with precision and care.
-        </p>
+      <div style={containerStyle}>
+        <div style={boxStyle}>
+          <h1 style={headingStyle}>A Complete Care Experience for Your Ride</h1>
+          <p style={paragraphStyle}>
+            Your go-to destination for premium vehicle care.<br />
+            We specialize in top-notch vehicle wash and motor services, ensuring your vehicle looks its best and runs smoothly.<br />
+            Explore our services and experience excellence like never before.<br />
+            Trust us to make your vehicle shine inside and out, with precision and care.
+          </p>
+        </div>
       </div>
     </div>
   );

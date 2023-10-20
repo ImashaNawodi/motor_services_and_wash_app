@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import './Profile.css'; // Import your CSS file
+import './Profile.css'; 
 import Home from './Home';
 
 export default function Profile() {
   const [showWelcome, setShowWelcome] = useState(false);
 
   useEffect(() => {
-    // Delay showing the welcome box by 2 seconds after the image animation starts
+    
     const timer = setTimeout(() => {
       setShowWelcome(true);
     }, 2000);

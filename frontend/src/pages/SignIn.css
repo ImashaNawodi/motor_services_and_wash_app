@@ -24,8 +24,8 @@
   
   .loginForm > label {
     margin: 10px 0;
-    font-weight: bold; /* Make the labels bold */
-    font-size: 18px; /* Increase the font size to 18px or your desired size */
+    font-weight: bold; 
+    font-size: 18px; 
 }
 
   
@@ -34,7 +34,7 @@
     background-color: white;
     border: none;
     border-radius: 10px;
-    width: 250px; /* Increase the width to adjust the input field length */
+    width: 250px; 
 }
 
 .loginInput:focus {
@@ -54,40 +54,40 @@
   }
   
   .loginRegisterButton {
-    margin-top: 20px; /* Add space below the "Welcome Box" */
+    margin-top: 20px; 
     background-color: teal;
     color: white;
-    padding: 10px 20px; /* Increase padding for width */
+    padding: 10px 20px;
     border: none;
     border-radius: 10px;
-    display: block; /* Display as a block element to move it below */
-    text-align: center; /* Center the text */
+    display: block; 
+    text-align: center; 
     cursor: pointer;
   }
   
   .remember-me {
     display: flex;
-    align-items: center; /* Vertically center the checkbox and text */
-    margin-top: 10px; /* Add space between the previous input and this section */
+    align-items: center; 
+    margin-top: 10px; 
   }
   
   .remember-me input {
-    margin-right: 5px; /* Add space between the checkbox and text */
+    margin-right: 5px; 
   }
   
   .agree-continue {
     display: flex;
-    align-items: center; /* Vertically center the checkbox and text */
-    margin-top: 10px; /* Add space between the previous button and this section */
+    align-items: center; 
+    margin-top: 10px; 
   }
   
   .agree-continue input {
-    margin-right: 5px; /* Add space between the checkbox and text */
+    margin-right: 5px; 
   }
   .welcome-box {
     margin-top: 20px;
     padding: 10px;
-    background-color: #00FA9A; /* Change this color to your desired color */
+    background-color: #00FA9A; 
     border: 1px solid #ccc;
     border-radius: 5px;
     text-align: right;

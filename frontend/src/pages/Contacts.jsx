@@ -15,7 +15,7 @@ export default function Contacts() {
       <div className="contacts-side">
         <h3>Contact Us</h3>
         <p className="we-are-here-text">
-          We're here to assist you. If you have any questions, feedback, or inquiries, please don't hesitate to get in touch with us. Our dedicated team is committed to providing you with the best support and assistance. You can reach us via the provided contact information. Your input is valuable to us, and we look forward to hearing from you.
+          We're here to assist you. If you have any questions, feedback, or inquiries, please don't hesitate to get in touch with us. Our dedicated team is committed to providing you with the best support and assistance. You can reach us via the provided contact information and send us a message. Your input is valuable to us, and we look forward to hearing from you.
         </p>
       </div>
 

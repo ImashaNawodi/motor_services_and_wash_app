@@ -13,7 +13,7 @@ export default function NavBar() {
         color: 'red',
         fontWeight: '500',
         fontStyle: 'italic',
-        fontFamily: 'Algerian, sans-serif', // Specify 'Algebrian' as the custom font
+        fontFamily: 'Algerian, sans-serif', 
         fontSize: '20px',
     };
 

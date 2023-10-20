@@ -5,7 +5,7 @@
   }
   
   
-  /* Center align the text in all sections */
+ 
 .description,
 .additional-info {
   flex: 1;
@@ -13,24 +13,24 @@
   text-align: center;
 }
 
-/* Modify main topic styles */
+
 .interior-detailing-box .description h2,
 .exterior-detailing-box .description h2,
 .full-service-packages-box .description h2,
 .additional-services-box .description h2 {
-  font-size: 28px; /* Increase font size */
-  color: #333; /* Change font color to dark gray */
-  font-weight: bold; /* Add bold style */
-  text-transform: uppercase; /* Uppercase text */
-  margin-bottom: 15px; /* Increase bottom margin */
+  font-size: 28px; 
+  color: #333;
+  font-weight: bold; 
+  text-transform: uppercase; 
+  margin-bottom: 15px; 
 }
 
-/* Modify subtopic styles to match the specified format */
+
 .additional-info h3 {
-  font-size: 24px; /* Adjust subtopic font size */
-  color: #333; /* Font color */
-  font-weight: bold; /* Font weight */
-  margin-bottom: 15px; /* Adjust bottom margin */
+  font-size: 24px; 
+  color: #333; 
+  font-weight: bold; 
+  margin-bottom: 15px; 
 }
 
 
@@ -45,10 +45,10 @@
     list-style-type: disc;
   }
   
-  /* Additional styling for paragraph text */
+  
   .description p,
   .additional-info ul li {
-    font-size: 16px; /* Use the same font size for paragraphs and list items */
+    font-size: 16px; 
   }
   
 

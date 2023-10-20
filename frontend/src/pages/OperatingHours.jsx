@@ -1,5 +1,5 @@
 import React from 'react';
-import './OperatingHours.css'; // Import the CSS file
+import './OperatingHours.css'; 
 
 export default function OperatingHours() {
   return (

@@ -24,13 +24,13 @@
 
 .registerForm > label {
   margin: 10px 0;
-  font-weight: bold; /* Make the text bold */
-  font-size: 18px; /* Increase font size */
+  font-weight: bold; 
+  font-size: 18px; 
 }
 
 .registerInput {
   padding: 10px;
-  background-color: #708090; /* Set the background color to #708090 */
+  background-color: #708090; 
   border: none;
   border-radius: 10px;
   width: 250px;
@@ -41,33 +41,43 @@
 }
 
 .registerLoginButton {
-  margin-top: 20px; /* Add space below the "Welcome Box" */
+  margin-top: 20px; 
   background-color: teal;
   color: white;
-  padding: 10px 20px; /* Increase padding for width */
+  padding: 10px 20px; 
   border: none;
   border-radius: 10px;
-  display: block; /* Display as a block element to move it below */
-  text-align: center; /* Center the text */
+  display: block; 
+  text-align: center;
   cursor: pointer;
 }
 
 .registerButton {
-  position: relative; /* Change position to relative */
-  margin-top: 20px; /* Add margin to separate from other content */
-  background-color: rgb(189, 12, 12);
-  cursor: pointer;
-  padding: 10px;
+  background-color: #0077b6; 
+  color: #eb1010; 
+  padding: 10px 20px;
   border: none;
-  color: rgb(143, 11, 219);
-  border-radius: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px; 
+  text-decoration: none; 
+  display: inline-block; 
+  width: 100%; 
+  text-align: center; 
+}
+
+.registerButton:hover {
+  background-color: #005a9e; /* Change the background color on hover */
 }
 
 
+
+
 .welcome-box {
-  margin-top: 410px; /* Add space between the "Sign Up" button and the welcome box */
+  margin-top: 410px; 
   padding: 10px;
-  background-color: #00FA9A; /* Change this color to your desired color */
+  background-color: #00FA9A; 
   border: 1px solid #ccc;
   border-radius: 5px;
   text-align: right;

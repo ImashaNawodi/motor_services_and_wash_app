@@ -1,25 +1,25 @@
-/* Apply background image to the entire page */
+
 body {
-  background-image: url('/Image/31130.jpg'); /* Replace 'your-background-image.jpg' with your image URL */
-  background-size: cover; /* Cover the entire viewport */
-  background-repeat: no-repeat; /* Prevent image repetition */
-  background-attachment: fixed; /* Fixed background image */
+  background-image: url('/Image/31130.jpg'); 
+  background-size: cover;
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
 }
 
-/* Style the container to hold both sides */
+
 .container {
   display: flex;
   flex-direction: column;
   
 }
 
-/* Style for each side */
+
 .contacts-side {
   flex: 1;
   padding: 20px;
   border: 1px solid #ccc;
   margin: 10px;
-  background-color: rgba(240, 240, 240, 0.8); /* Semi-transparent background color */
+  background-color: rgba(240, 240, 240, 0.8); 
   width: 700px;
 }
 
@@ -28,39 +28,36 @@ body {
   padding: 20px;
   border: 1px solid #ccc;
   margin: 10px;
-  background-color: rgba(173, 229, 201, 0.8); /* Semi-transparent background color */
-  color: #0c97e2; /* Change font color to a shade of blue */
-  font-family: 'Helvetica', sans-serif; /* Change font family to Helvetica with a fallback to sans-serif */
+  background-color: rgba(173, 229, 201, 0.8); 
+  color: #0c97e2; 
+  font-family: 'Helvetica', sans-serif; 
 }
 
-/* Contacts.css */
 
-/* Style for the "Contact Us" heading */
 .contacts-side1 h2 {
-  font-size: 24px; /* Change font size to 24 pixels */
-  font-weight: bold; /* Set font weight to bold */
+  font-size: 24px; 
+  font-weight: bold; 
 }
 
-/* Style for the other headings (Car Care Division and Corporate Office) */
+
 .contacts-side h3 {
-  font-size: 20px; /* Change font size to 20 pixels */
-  font-weight: normal; /* Set font weight to normal */
+  font-size: 20px; 
+  font-weight: normal; 
   color: rgb(14, 146, 207);
 }
 
-/* Style for the message container */
-/* Style for the message container */
+
 .message-container {
   padding: 20px;
   border: 1px solid #ccc;
   margin: 10px;
-  background-color: rgba(240, 240, 240, 0.8); /* Semi-transparent background color */
+  background-color: rgba(240, 240, 240, 0.8); 
   width: 700px;
 }
 
 .message-container h3 {
-  font-size: 20px; /* Change font size to 20 pixels */
-  font-weight: bold; /* Set font weight to bold */
+  font-size: 20px; 
+  font-weight: bold; 
 }
 
 .message-container textarea {
@@ -72,25 +69,23 @@ body {
 }
 
 .message-container button {
-  background-color: #0077b6; /* Change button background color */
-  color: #ffffff; /* Change button text color */
+  background-color: #0077b6; 
+  color: #ffffff; 
   padding: 10px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
 }
-/* Contacts.css */
 
-/* Style for the "We're here to assist you" text */
 .we-are-here-text {
-  font-size: 18px; /* Change font size to your preferred size */
-  color: #8763c0; /* Change font color to your preferred color */
-  line-height: 1.5; /* Adjust line height as needed for spacing */
-  margin-bottom: 20px; /* Add margin to the bottom for spacing */
+  font-size: 18px; 
+  color: #8763c0; 
+  line-height: 1.5; 
+  margin-bottom: 20px; 
 }
 
 .message-container button:hover {
-  background-color: #005a9e; /* Change button background color on hover */
+  background-color: #005a9e; 
 }
 
