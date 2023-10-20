@@ -15,7 +15,7 @@ function HomePage() {
 
   const welcomeTextStyle = {
     fontSize: "28px",
-    color: "red",
+    color: "purple",
     marginBottom: "20px",
     fontWeight: "bold",
   };
@@ -25,7 +25,7 @@ function HomePage() {
     padding: "20px",
     borderRadius: "10px",
     width: "900px",
-    marginTop: "20px", // Add margin-top to separate it from the navigation bar
+    marginTop: "20px", 
   };
 
   const headingStyle = {

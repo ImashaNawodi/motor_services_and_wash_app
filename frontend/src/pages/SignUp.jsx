@@ -49,10 +49,7 @@ export default function SignUp() {
           placeholder="Enter your password..."
           onChange={(e) => setPassword(e.target.value)}
         />
-        <div className="agree-continue">
-          <input type="checkbox" id="agreeAndContinue" />
-          <label htmlFor="agreeAndContinue">Agree and Continue</label>
-        </div>
+        
         <button className="registerButton" type="submit">
         <Link className="link" to="/signin">
           Sign Up

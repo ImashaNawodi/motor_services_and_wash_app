@@ -16,10 +16,6 @@ export default function SignIn() {
         </div>
         <button className="loginButton"><Link to="/profile">Login</Link></button>
       </form>
-      <div className="agree-continue">
-        <input type="checkbox" id="agreeAndContinue" />
-        <label htmlFor="agreeAndContinue">Agree and Continue</label>
-      </div>
      
       
     </div>
